@@ -4,7 +4,7 @@ import { Col, FloatingLabel, Form, Row } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <div className='container'>
+        <div className='container' style={{marginBottom:'100px', marginTop:'100px'}}>
             <Row>
                 <Col sm={8}>
                 <Form className=" mt-5">
