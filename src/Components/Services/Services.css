@@ -1,0 +1,16 @@
+.services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #edeef3;
+    
+}
+.btn-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.btn-container .btn{
+    margin: 15px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
