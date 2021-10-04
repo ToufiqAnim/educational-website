@@ -5,8 +5,13 @@
     
 }
 .container h2{
-    font-size: 4rem;
+    font-size: 3.4rem;
 }
 .container p{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    max-width: 80rem;
 }
+.about-us{
+    display: flex;
+    margin-bottom: 100px;
+  }
