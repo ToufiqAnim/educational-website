@@ -6,6 +6,8 @@ import { useState } from 'react';
 // import { Col, Row } from 'react-bootstrap';
 
 import Course from '../Course/Course';
+
+import HeaderTop from '../HeaderTop/HeaderTop';
 import './Home.css'
 
 const Home = () => {
@@ -17,11 +19,10 @@ const Home = () => {
     },[])
     return (
         <div >
-            
-            
+            <HeaderTop></HeaderTop>  
             <section className="container">
                 <h1 className='ps-2 mt-5 fw-bold'>Popular Courses</h1>
-                <div className=" course-details ">
+                <div className=" course-details">
                     
                     {
                         courses.map(course => <Course

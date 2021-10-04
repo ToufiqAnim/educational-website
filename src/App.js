@@ -17,11 +17,12 @@ import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div className="App">
+       
       <Router>
-          <Header></Header>
+      <Header></Header>
 
           <Switch>
-            <Route path='/home'>
+            <Route exact path='/home'>
               <Home></Home>
             </Route>
             <Route path='/services'>
@@ -33,17 +34,16 @@ function App() {
             <Route exact path='/'>
               <Home></Home>
             </Route>
-            <Route path="/contact">
+            <Route exact path="/contact">
               <Contact></Contact>
-            </Route>
-            
+            </Route>            
             <Route>
               <NotFound path="*"></NotFound>
             </Route>
           </Switch>
-         
+        <Footer></Footer> 
       </Router>
-       <Footer></Footer>
+       
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useEffect, useState } from 'react';
+import HeaderTop from '../HeaderTop/HeaderTop';
 import Service from '../Service/Service';
 import './Services.css'
 
@@ -12,6 +13,7 @@ const Services = () => {
     },[])
     return (
         <section>
+            <HeaderTop></HeaderTop>
             <h2 className='ms-5 mt-5 ps-5'>Topics:</h2>
             <div className="container btn-container">
                 <Button className='btn'>Programming Languages</Button>
