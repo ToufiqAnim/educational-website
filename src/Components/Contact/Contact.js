@@ -25,7 +25,7 @@ const Contact = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control placeholder="Password" />
                 </Form.Group>
-                <FloatingLabel controlId="floatingTextarea2" label="Comments">
+                <FloatingLabel controlId="floatingTextarea2" label="enter Your massege">
                     <Form.Control
                     as="textarea"
                     placeholder="Enter Your Massage"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+
 import { IoBook } from "react-icons/io5";
 import { Container, Nav, Navbar } from 'react-bootstrap';
 

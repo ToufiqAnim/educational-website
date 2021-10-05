@@ -10,14 +10,14 @@ const Course = (props) => {
     return (
         <div className="m-3">
             <Card>
-            <Card.Img variant="top" className="h-50 img" src={image}/>
-            <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Text>{tutor}</Card.Text>
-                <Card.Text><AiFillStar color="salmon"></AiFillStar> {ratings} ({people})</Card.Text>
-                <Card.Text>{price}</Card.Text>
-                <Button className="btn" variant="primary">Enroll Now</Button>
-            </Card.Body>
+                <Card.Img variant="top" className="h-50 img" src={image}/>  
+                <Card.Body>
+                    <Card.Title className="text-danger">{name}</Card.Title>
+                    <Card.Text>{tutor}</Card.Text>
+                    <Card.Text className="fw-bold"> {ratings} <AiFillStar color="salmon"></AiFillStar> ({people})</Card.Text>
+                    <Card.Text className="fw-bold text-primary fs-4">{price}</Card.Text>
+                    <Button className="btn text-primary fs-5 py-2 px-4" variant="primary">Enroll Now</Button>
+                </Card.Body>
             </Card>
 
 

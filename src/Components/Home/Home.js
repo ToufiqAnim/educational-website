@@ -26,9 +26,13 @@ const Home = () => {
     }
     return (
         <div >
-            <HeaderTop></HeaderTop>  
+            <HeaderTop></HeaderTop> 
+
+             {/*course scetion  */}
             <section className="container">
-                <h1 className='ps-2 mt-5 fw-bold'>Explore Top Courses</h1>
+                <Link style={{textDecoration:"none", marginLeft:"10px"}} to='/notFound'>Professional Certificates</Link>
+                <h3 className='ps-2 mt-3 mb-4 fw-bold'>Explore Top Courses</h3>
+                
                 <div className=" course-details">
                     
                     {
@@ -42,7 +46,7 @@ const Home = () => {
                 
             </section>
             <div className='mt-4 text-center'>
-                <Link className='button fw-bold fs-4 ms-2 mt-5 text-center' style={buttonStyle} to='/services' >View More Courses</Link>
+                <Link className='button fw-bold fs-5 ms-2 mt-5 text-center' style={buttonStyle} to='/services' >View More Courses</Link>
                 </div>
             </div>
     );

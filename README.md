@@ -1,4 +1,14 @@
 My Site: 'https://edubuzz-8b49de.netlify.app/';
-Site Details: Online PlatForm
+
+
+Site Details: Online Educational PlatForm;
+
 Name:EduBuzz;
-Courses:Web Developement,Python, Data Science, Cooking,Language Learning, Javascript etc
+
+Courses:
+        1.Web Developement, 
+        2.Python, 
+        3.Data Science, 
+        4.Cooking, 
+        5.Language Learning, 
+        6.Javascript etc
