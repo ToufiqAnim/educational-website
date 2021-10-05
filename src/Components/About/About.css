@@ -1,6 +1,6 @@
 .about{
     font-size: 60px;
-    background-color: #2a2c7f;
+    background-color: #2a2b7fc9;
     
     
 }
@@ -12,6 +12,5 @@
     max-width: 80rem;
 }
 .about-us{
-    display: flex;
     margin-bottom: 100px;
   }

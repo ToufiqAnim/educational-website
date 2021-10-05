@@ -8,7 +8,7 @@ const NotFound = () => {
         history.push("/home");
     }
     return (
-        <div className="text-center">
+        <div className="text-center mt-5">
             <img className="pt-5" src="https://img.freepik.com/free-vector/error-404-concept-landing-page_52683-18367.jpg?size=626&ext=jpg" alt="" />
             <h1 className='fw-bolder m-3' style={{fontSize:'60px'}}>Page Not Found!</h1>
             <p className='fs-3' >Please Try Again Later</p>

@@ -22,27 +22,27 @@ const Services = () => {
              <Container>
                  <Row className="">
                      <Col xs={6} sm={6} md={4}>
-                         <Link to="" className="btn w-100 p-3 fw-bold fs-5  mb-4">Development</Link>
+                         <Link to="/notfound" className="btn w-100 p-3 fw-bold fs-5  mb-4">Development</Link>
                     </Col>
 
                      <Col xs={6} sm={6} md={4}>
-                         <Link to="" className="btn w-100 p-3 fw-bold fs-5 ">Design</Link>
+                         <Link to="/notfound" className="btn w-100 p-3 fw-bold fs-5 ">Design</Link>
                     </Col>
 
                      <Col xs={6} sm={6} md={4}>
-                         <Link to="" className="btn w-100 p-3 fw-bold fs-5 mb-4">Software & It</Link>
+                         <Link to="/notfound" className="btn w-100 p-3 fw-bold fs-5 mb-4">Software & It</Link>
                     </Col>
 
                      <Col xs={6} sm={6} md={4}>
-                         <Link to="" className="btn w-100 p-3 fw-bold fs-5">Photography</Link>
+                         <Link to="/notfound" className="btn w-100 p-3 fw-bold fs-5">Photography</Link>
                     </Col>
 
                      <Col xs={6} sm={6} md={4}>
-                         <Link to="" className="btn w-100 p-3 fw-bold fs-5">Languages</Link>
+                         <Link to="/notfound" className="btn w-100 p-3 fw-bold fs-5">Languages</Link>
                     </Col>
 
                      <Col xs={6} sm={6} md={4}>
-                         <Link to="" className="btn w-100 p-3 fw-bold fs-5">Business</Link>
+                         <Link to="/notfound" className="btn w-100 p-3 fw-bold fs-5">Business</Link>
                     </Col>
                  </Row>
              </Container>

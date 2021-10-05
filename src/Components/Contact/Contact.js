@@ -5,6 +5,7 @@ import { Col, FloatingLabel, Form, Row } from 'react-bootstrap';
 const Contact = () => {
     return (
         <div className='container' style={{marginBottom:'100px', marginTop:'100px'}}>
+            <h1>Join us</h1>
             <Row>
                 <Col xs={12} sm={8}>
                 <Form className=" mt-5">
@@ -20,9 +21,9 @@ const Contact = () => {
                     </Form.Group>
                 </Row>
 
-                <Form.Group className="mb-3" controlId="formGridAddress1">
-                    <Form.Label>Subject</Form.Label>
-                    <Form.Control placeholder="Subject" />
+                <Form.Group className="mb-3" controlId="formGridPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control placeholder="Password" />
                 </Form.Group>
                 <FloatingLabel controlId="floatingTextarea2" label="Comments">
                     <Form.Control
