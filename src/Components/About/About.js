@@ -10,7 +10,7 @@ const About = () => {
         <div>
            <div  className="about">
                 {/* <h1 className="about text-center text-white fw-bolder mb-5  p-5  ">About Us</h1> */}
-                <img src="./about-us.png" alt="" />
+                <img className="img-fluid" src="./about-us.png" alt="" />
            </div>
            <div className='container text-center mt-3 mb-5'>
                 <h2><span className="text-primary">Changing </span> learning for the better</h2>
