@@ -1,5 +1,7 @@
-import Button from '@restart/ui/esm/Button';
+
 import React, { useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import HeaderTop from '../HeaderTop/HeaderTop';
 import Service from '../Service/Service';
 import './Services.css'
@@ -14,26 +16,46 @@ const Services = () => {
     return (
         <section>
             <HeaderTop></HeaderTop>
-            <h2 className='ms-5 mt-5 ps-5'>Topics:</h2>
-            <div className="container btn-container">
-                <Button className='btn'>Programming Languages</Button>
-                <Button className='btn'>Graphics Design</Button>
-                <Button className='btn'>Motion Design</Button>
-                <Button className='btn'>Cooking</Button>
-                <Button className='btn'>Languages</Button>
-                <Button className='btn'>Web Developement</Button>
-             </div>
-            <h1 className='ms-5 ps-5 mt-5 fw-bold '>Courses</h1>
+            <h2 className='mt-5 text-center mb-4 fw-bold' style={{color:"#5624d0"}}>Top categories</h2>
             
-            <div className="services mt-0 m-5 p-5">
+
+             <Container>
+                 <Row className="">
+                     <Col xs={6} sm={6} md={4}>
+                         <Link to="" className="btn w-100 p-3 fw-bold fs-5  mb-4">Development</Link>
+                    </Col>
+
+                     <Col xs={6} sm={6} md={4}>
+                         <Link to="" className="btn w-100 p-3 fw-bold fs-5 ">Design</Link>
+                    </Col>
+
+                     <Col xs={6} sm={6} md={4}>
+                         <Link to="" className="btn w-100 p-3 fw-bold fs-5 mb-4">Software & It</Link>
+                    </Col>
+
+                     <Col xs={6} sm={6} md={4}>
+                         <Link to="" className="btn w-100 p-3 fw-bold fs-5">Photography</Link>
+                    </Col>
+
+                     <Col xs={6} sm={6} md={4}>
+                         <Link to="" className="btn w-100 p-3 fw-bold fs-5">Languages</Link>
+                    </Col>
+
+                     <Col xs={6} sm={6} md={4}>
+                         <Link to="" className="btn w-100 p-3 fw-bold fs-5">Business</Link>
+                    </Col>
+                 </Row>
+             </Container>
+            <h1 className='ms-5 ps-5 mt-5 mb-4 fw-bold text-center' style={{color:"#5624d0"}}>Students are viewing</h1>
             
-            {
-                services.map(service => <Service
-                     key={service.id}
-                     service = {service}
-                     ></Service>)
-            }
-        </div>
+            <div className="services container ">   
+                {
+                    services.map(service => <Service
+                    key={service.id}
+                    service = {service}
+                    ></Service>)
+                }            
+            </div>
         </section>
        
     );

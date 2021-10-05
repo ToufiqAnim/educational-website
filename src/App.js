@@ -3,11 +3,10 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
-
-
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFount/NotFound';
 import Services from './Components/Services/Services';

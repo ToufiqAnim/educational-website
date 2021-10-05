@@ -4,17 +4,9 @@ import { Link } from 'react-router-dom';
 import './Footer.css'
 
 const Footer = () => {
-    const footer = {
-        
-        padding: '1rem',
-        backgroundColor: '001540',
-        bottom:' 0',
-        left: '0',
-        width: '100%'
-        
-    }
+   
     return (
-        <div style={footer} className="center mt-5">
+        <div className="center mt-5">
           <footer>
             <div className="container me-5 mt-5">
                 <div className="row">

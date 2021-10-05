@@ -19,6 +19,11 @@ const Course = (props) => {
                 <Button className="btn" variant="primary">Enroll Now</Button>
             </Card.Body>
             </Card>
+
+
+
+
+            
         </div>
     );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { IoBook } from "react-icons/io5";
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 
 
@@ -9,15 +10,22 @@ const Header = () => {
    
     return (
         <div>
-            
-            <nav className="container-fluid d-flex align-items-center justify-content-center">
-                <Link className="nav-logo " to='/'><IoBook className="logo" size=".8em"></IoBook> EduBuzz</Link>
-                <Link className="navLink pe-5 fs-4" to='/home'>Home</Link>
-                <Link className="navLink pe-5 fs-4" to='/services'>Services</Link>
-                <Link className="navLink pe-5 fs-4" to='/about'>About</Link>
-                <Link className="navLink pe-5 fs-4" to='/contact'>Contact</Link>
-            </nav>
-            
+        <Navbar bg="dark" expand="lg" variant='dark' style={{lineHeight:"80px"}}>
+            <Container > 
+                <Navbar.Brand as={Link} to="/home" className="fs-1 fw-bold">
+                    <IoBook className="logo" size=".8em"></IoBook> EduBuzz  
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto" style={{marginLeft:"50%"}}>
+                        <Nav.Link as={Link} to="/home" className="fs-5 text-white pe-3">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/services" className="fs-5 text-white pe-3">Services</Nav.Link>
+                        <Nav.Link as={Link} to="/about" className="fs-5 text-white pe-3">About</Nav.Link>
+                        <Nav.Link as={Link} to="/contact" className="fs-5 text-white pe-3">Contact</Nav.Link>   
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
         </div>
     );
 };

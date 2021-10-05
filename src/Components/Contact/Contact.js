@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <div className='container' style={{marginBottom:'100px', marginTop:'100px'}}>
             <Row>
-                <Col sm={8}>
+                <Col xs={12} sm={8}>
                 <Form className=" mt-5">
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridEmail">
